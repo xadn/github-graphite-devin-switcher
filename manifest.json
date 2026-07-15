@@ -1,0 +1,25 @@
+{
+  "name": "Devin Review",
+  "description": "Adds \"Review in Devin\" buttons to GitHub and Graphite PR pages",
+  "version": "0.1",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["common.js", "github.js"]
+    },
+    {
+      "matches": ["*://app.graphite.dev/*", "*://app.graphite.com/*"],
+      "js": ["common.js", "graphite.js"]
+    },
+    {
+      "matches": [
+        "*://devinreview.com/*",
+        "*://app.devin.ai/*",
+        "*://*.devinenterprise.com/*"
+      ],
+      "js": ["common.js", "devinreview.js"]
+    }
+  ]
+}
