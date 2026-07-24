@@ -1,4 +1,4 @@
-# Devin Review extension
+# GitHub Graphite Devin Switcher
 
 Cross-links PR pages between GitHub, Graphite, and Devin Review — each surface links to the other two:
 
